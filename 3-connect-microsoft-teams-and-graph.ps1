@@ -1,4 +1,3 @@
-
 $password = Import-CliXml -Path passwd.xml
 Unlock-SecretStore -Password $password
 $ClientSecret = Get-Secret -Name appSecret -AsPlainText

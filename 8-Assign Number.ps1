@@ -6,6 +6,11 @@ $siteToAreaCode = @{
   “MN” = “612”
 }
 
+$emergencyPolicies = @{
+  “MTL” = “MTL Emergency Policy”
+  “MN” = “MN Emergency Policy”
+}
+
 $areaCode = $siteToAreaCode[$sitename]
 
 $csPhoneNumberAssignmentParams = @{
@@ -20,8 +25,10 @@ $csPhoneNumberAssignmentParams = @{
 $siteNumbers = Get-CsPhoneNumberAssignment @csPhoneNumberAssignmentParams
 
 Set-CsPhoneNumberAssignment -Identity $upn -PhoneNumberType CallingPlan -PhoneNumber $siteNumbers[0].TelephoneNumber 
+Grant-CsTeamsEmergencyCallingPolicy -Identity $upn -PolicyName $emergencyPolicies[$sitename]
 
-Get-CsOnlineUser -Identity $upn | Select-Object UserPrincipalName, LineUri
+
+Get-CsOnlineUser -Identity $upn | Format-List UserPrincipalName, LineUri, TeamsEmergencyCallingPolicy
 
 
 
