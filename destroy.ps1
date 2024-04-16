@@ -1,8 +1,11 @@
-# Install with PowerShellGet 2.x
+# Unregister Vault
+Unregister-SecretVault -Name SecretStore
+
+# Uninstall with PowerShellGet 2.x
 Uninstall-Module Microsoft.PowerShell.SecretStore
 Uninstall-Module Microsoft.PowerShell.SecretManagement
 
 
-# Install MirosoftTeams
+# Uninstall MirosoftTeams
 Uninstall-Module MicrosoftTeams
 Uninstall-Module Microsoft.Graph.Beta

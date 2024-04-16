@@ -20,11 +20,3 @@ $storeConfiguration = @{
 
 }
 Set-SecretStoreConfiguration @storeConfiguration
-
-
-# Unregister-SecretVault -Name SecretStore
-
-
-
-
-

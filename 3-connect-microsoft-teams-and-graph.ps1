@@ -4,7 +4,7 @@ Unlock-SecretStore -Password $password
 $ClientSecret = Get-Secret -Name appSecret -AsPlainText
 
 
-$ApplicationID = "e3f319d3-d7c2-43cc-a3f8-a5c32766d856"
+$ApplicationID = "db002c96-ee09-4f12-8da1-d261c2dff78e"
 $TenantID = "dev.goziro.com"
 
 $graphtokenBody = @{ 
