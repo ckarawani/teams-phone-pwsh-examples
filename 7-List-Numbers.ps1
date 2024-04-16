@@ -1,6 +1,3 @@
-
-
-
 $csPhoneNumberAssignmentParams = @{
     CapabilitiesContain = 'UserAssignment'
     NumberType = 'CallingPlan'

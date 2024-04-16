@@ -1,4 +1,3 @@
-
 $sitename = Read-Host -Prompt 'Please Provide Site Name (ex. MN or MTL)'
 $upn =  Read-Host -Prompt 'Please Provide UPN' 
 
