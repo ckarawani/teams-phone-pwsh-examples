@@ -6,7 +6,6 @@ $licenseSkus = Get-MgSubscribedSku
 
 $report = @()
 
-#ref. https://medium.com/@mozzeph/translate-microsoft-365-license-guids-to-product-names-in-powershell-e8fa373ace16
 foreach ($sku in $licenseSkus) {
 
     $skuDetails = New-Object -TypeName psobject

@@ -15,7 +15,7 @@ $areaCode = $siteToAreaCode[$sitename]
 
 $csPhoneNumberAssignmentParams = @{
     CapabilitiesContain = 'UserAssignment'
-    NumberType = 'CallingPlan'
+    # NumberType = 'CallingPlan'
     PstnAssignmentStatus = 'Unassigned'
     TelephoneNumberContain = $areaCode
 

@@ -1,5 +1,5 @@
 $upnInput =  Read-Host -Prompt 'Comma Seperated List of Users to License' 
-$skuInput =  Read-Host -Prompt 'Comma Seperated List of Liceses to assign (Ex. MCOPSTNC,SPE_E5)' 
+$skuInput =  Read-Host -Prompt 'Comma Seperated List of Licenses to assign (Ex. MCOPSTNC,SPE_E5,)' 
 
 $upnArray = $upnInput.Split(",");
 $skuArray = $skuInput.split(",");
