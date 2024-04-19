@@ -35,3 +35,4 @@ Get-CsOnlineUser -Identity $upn | Format-List UserPrincipalName, LineUri, TeamsE
 
 # Get Users with phoneNumber 
 #Get-CsOnlineUser -Filter {LineUri -like 'tel:+1438*'} | Select-Object UserPrincipalName, LineUri
+# Montreal Direct Routing Numbers +14504971648,+14504971649, +14504971650
